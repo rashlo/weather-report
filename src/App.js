@@ -2,7 +2,6 @@ import React from "react";
 import Weather from "./components/weather";
 import Form from "./components/form";
 import Titles from "./components/titles";
-import Clock from "./components/clock";
 
 const Api_Key = '265e428a78effa281f02bbbceb226123';
 
@@ -43,15 +42,10 @@ class App extends React.Component {
         <div className = "wrapper">
           <div className = "main">
             <div className = "container">
-              <div className = "row">
-                <div className = "col-xs-5 clock-container">
-                  <Clock />
-                </div>
-              </div>
-              <div className = "row">
+              <div className = "row"> 
                 <div className = "col-xs-5 title-container">
                   <Titles />
-                </div>
+                </div>  
                 <div className = "col-xs-6 form-container">
                   <Form loadWeather={this.getWeather} />
                   <Weather
