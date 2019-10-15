@@ -1,0 +1,20 @@
+import React from 'react';
+import ReactDom from 'react-dom';
+
+class Titles extends React.Component {
+    render() {
+        return (
+            <div>
+              <h1 className = 'title-container_title'>Weather</h1>
+              <p className = 'title-container_subtitle'> Find weather conditions in your city </p>
+            </div>
+        )
+    }
+}
+
+ReactDom.render(
+    <Titles />,
+    document.getElementById('root')
+);
+
+export default Titles
