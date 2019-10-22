@@ -25,6 +25,11 @@ class Weather extends React.Component{
                         <span className='weather_value'> {this.props.description} </span> 
                     </p>
                 }
+                {
+                    this.props.icon && <p>Icon:
+                        <span className='weather_value'> {this.props.icon} </span>
+                    </p>
+                }
                 {this.props.error && <p className='weather_value'>{this.props.error}</p>}
             </div>
         )

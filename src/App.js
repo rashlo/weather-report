@@ -13,7 +13,9 @@ class App extends React.Component {
     country: undefined,
     humidity: undefined,
     description: undefined,
-    error: undefined
+    //code: undefined,
+    icon: undefined,
+    error: undefined,
   }
 
   getWeather=async(e)=>{
@@ -21,7 +23,6 @@ class App extends React.Component {
     const country=e.target.elements.country.value;
     e.preventDefault();
     const apiCall = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=${Api_Key}`);
-    //const apiCall = await fetch('http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}');
     const response=await apiCall.json();
     console.log(response);
     this.setState({
@@ -30,15 +31,20 @@ class App extends React.Component {
       country: response.sys.country,
       humidity: response.main.humidity,
       description: response.weather[0].description,
+      icon: response.weather[0].icon,
       error: ""
     })
   }
 
+  
+  
+
+
+ 
   render() {
 
     return (
-
-      <div>
+       <div>
         <div className = "wrapper">
           <div className = "main">
             <div className = "container">
@@ -54,7 +60,9 @@ class App extends React.Component {
                     country={this.state.country}
                     humidity={this.state.humidity}
                     description={this.state.description}
+                    icon={this.state.icon}
                     error={this.state.error} />
+                  <span> <img src='http://openweathermap.org/img/wn/${iconCode}@2x.png' alt=''></img> </span>  
                 </div>
               </div>
             </div>
