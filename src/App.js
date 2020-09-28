@@ -60,7 +60,6 @@ class App extends React.Component {
                     country={this.state.country}
                     humidity={this.state.humidity}
                     description={this.state.description}
-                    icon={this.state.icon}
                     error={this.state.error} />
                   <span> <img src='http://openweathermap.org/img/wn/${iconCode}@2x.png' alt=''></img> </span>  
                 </div>
