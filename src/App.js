@@ -15,7 +15,7 @@ class App extends React.Component {
     description: undefined,
     //code: undefined,
     icon: undefined,
-    error: undefined,
+    error: undefined
   }
 
   getWeather=async(e)=>{
