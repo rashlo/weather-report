@@ -33,9 +33,8 @@ class App extends React.Component {
       icon: response.weather[0].icon,
       error: ""
     })
+		console.log(response)
   }
-
-	//iconURL = `https://openweathermap.org/img/w/${this.state.icon}.png`;
 
   render() {
     return (
