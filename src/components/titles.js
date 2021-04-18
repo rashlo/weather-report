@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import Clock from './clock';
 
 class Titles extends React.Component {
@@ -14,10 +13,5 @@ class Titles extends React.Component {
         )
     }
 }
-
-ReactDom.render(
-    <Titles />,
-    document.getElementById('root')
-);
 
 export default Titles

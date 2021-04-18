@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 
 class Form extends React.Component {
     render() {
@@ -9,14 +8,8 @@ class Form extends React.Component {
               <input type="text" name="country" placeholder="Country..." />
               <button id='submit'>Get Weather</button>
             </form>  
-
         )
     }
 }
-/*
-ReactDom.render(
-    <Form />,
-    document.getElementById('root')
-);
-*/
+
 export default Form;

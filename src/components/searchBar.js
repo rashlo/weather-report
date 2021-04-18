@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 
 class SearchBar extends React.Component {
      render() {
@@ -15,10 +14,5 @@ class SearchBar extends React.Component {
         );
     }
 }
-
-ReactDom.render(
-    <SearchBar />,
-    document.getElementById('root')
-);
 
 export default SearchBar;

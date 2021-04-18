@@ -22,6 +22,10 @@ body {
   margin: 0 auto;
 }
 
+.container {
+	margin: 0px
+}
+
 .title-container {
   height: 90vh;
   background: url("components/bg.jpg") center center no-repeat;
@@ -48,13 +52,6 @@ body {
   line-height: 1.5;
   font-family: "Merriweather", serif;
 }
-
-/*
-.clock-container {
-  background-color: darkblue;
-  color: whitesmoke;
-}
-*/
 
 .form-container {
   background-color: white; 
@@ -104,11 +101,21 @@ button:active {
   outline: none;
 }
 
-.weather__info {
+p {
+	margin: 0 0 3.5vh;
+}
+
+.weather.info {
+	padding-top: 3vh;
   width: 60%;
-  font-size: 20px;
+  font-size: 2vw;
   font-weight: 200;
-  letter-spacing: 2px;
+  letter-spacing: 0.2vw;
+}
+
+.value-title {
+	text-decoration: underline;
+	text-underline-position: under;
 }
 
 .weather__key {
