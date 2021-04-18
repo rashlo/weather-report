@@ -13,10 +13,10 @@ class Form extends React.Component {
         )
     }
 }
-
+/*
 ReactDom.render(
     <Form />,
     document.getElementById('root')
 );
-
+*/
 export default Form;

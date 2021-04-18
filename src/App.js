@@ -35,14 +35,8 @@ class App extends React.Component {
       error: ""
     })
   }
-
-  
-  
-
-
  
   render() {
-
     return (
        <div>
         <div className = "wrapper">
