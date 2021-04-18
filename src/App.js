@@ -13,7 +13,7 @@ class App extends React.Component {
     country: undefined,
     humidity: undefined,
     description: undefined,
-    //code: undefined,
+    code: undefined,
     icon: undefined,
     error: undefined
   }
