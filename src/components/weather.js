@@ -22,7 +22,7 @@ class Weather extends React.Component{
 					this.props.humidity && 
 					<p>
 						<span className="value-title">Humidity:</span>
-						<span className='weather_value'> {this.props.humidity} % </span> 
+						<span className='weather_value'> {this.props.humidity}% </span> 
 					</p>
 				}
 				{
